@@ -17,6 +17,7 @@ class Instructor::CoursesController < ApplicationController
 
   def show
    
+   
   end
 
   private
