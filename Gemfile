@@ -69,7 +69,8 @@ source 'https://rails-assets.org' do
 end
 gem 'simple_form'
 gem "devise", ">= 4.7.1"
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 1.0'
 gem "figaro"
 gem "fog-aws"
 gem "mini_magick"
+gem 'carrierwave-aws'
