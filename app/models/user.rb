@@ -13,5 +13,4 @@ has_many :enrolled_courses, through: :enrollments, source: :course
     return enrolled_courses.include?(course)
   end
 
-
 end
