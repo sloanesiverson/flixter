@@ -1,7 +1,7 @@
 class Course < ApplicationRecord
   belongs_to :user
   has_many :sections
-  mount_uploader :image, ImageUploader
+  mount_uploader :image, :courses, ImageUploader
   has_many :enrollments
 
   validates :title, presence: true
@@ -17,3 +17,4 @@ class Course < ApplicationRecord
     ! free?
   end
 end
+
