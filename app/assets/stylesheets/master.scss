@@ -1,6 +1,10 @@
 @import "bootstrap";
 @import "font-awesome";
 
+* {
+  box-sizing: border-box;
+}
+
 .booyah-box h2, .booyah-box h1 {
   margin: 10px;
 

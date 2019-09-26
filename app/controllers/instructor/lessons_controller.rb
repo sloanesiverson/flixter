@@ -1,9 +1,8 @@
-class Instructor::LessonsController < ApplicationController
-  protect_from_forgery prepend: true, with: :exception
+class Instructor::LessonsController < ApplicationController 
   before_action :authenticate_user!
   before_action :require_authorized_for_current_section, only: [:create]
   before_action :require_authorized_for_current_lesson, only: [:update]
-
+  skip_before_action :verify_authenticity_token 
 
   def create
     @lesson = current_section.lessons.create(lesson_params)
